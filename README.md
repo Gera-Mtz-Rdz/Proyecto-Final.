@@ -1,0 +1,8 @@
+# Proyecto-Final.
+PROYECTO FINAL (FLANG) MARTINEZ RODRIGUEZ GERARDO E.
+Flang (también conocido como "Classic Flang") es un compilador de Fortran fuera del árbol que apunta a LLVM. Es una versión de código abierto de pgfortran, un compilador comercial de Fortran de PGI / NVIDIA. Es diferente del nuevo Flang (anteriormente conocido como "F18"; ver https://flang.llvm.org/ ), que ha sido parte del proyecto LLVM desde 2020, aunque ambos son desarrollados por la misma comunidad. Tampoco está relacionado con otros proyectos del mismo nombre, como https://github.com/llvm-flang/flang y https://github.com/isanbard/flang .
+Classic Flang se utiliza en varios proyectos comerciales posteriores y se sigue manteniendo, pero el plan es reemplazar Classic Flang con el nuevo Flang en el futuro.
+Flang es todavía un trabajo en progreso para esta versión y se incluye para experimentación y comentarios.
+Flang es capaz de analizar un subconjunto completo del lenguaje Fortran y verificar su corrección. Flang aún no puede generar LLVM IR para el código fuente y, por lo tanto, no puede compilar un binario en ejecución.
+Flang puede descomprimir el código fuente de entrada en una forma canónica y emitirlo para permitir las pruebas. Flang también puede invocar un compilador de Fortran externo en esta entrada canónica.
+De forma predeterminada, Flang analizará el archivo Fortran y hello.f90luego lo descomprimirá en un archivo fuente canónico de Fortran. Flang luego invocará un compilador externo de Fortran para compilar este archivo fuente y vincularlo, colocando el ejecutable resultante en formato hello.bin
